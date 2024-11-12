@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times;
+  }
+
+  body {
+    background: #2c2b28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  canvas {
+    border: 1px solid #3f3f3a;
+    background: #343431;
+    display: none; /* Hide canvas by default */
+  }
+
+  .game-info {
+    color: #e5e5e2;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .question {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .score {
+    font-size: 18px;
+  }
+
+  .wrong-answer {
+    color: #ce4545;
+    margin-top: 10px;
+    height: 20px;
+  }
+
+  .menu, .death-screen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333230;
+    color: #d6d2b8;
+    padding: 20px; /* Adjusted padding for better fit */
+    text-align: center;
+    width: 80%; /* Dynamic width */
+    max-width: 400px; /* Maximum width for larger screens */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Added shadow for better visibility */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .menu button, .death-screen button {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #272623; /* Claude AI primary color */
+    color: #b8b5a9;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Full width buttons */
+  }
+
+  .menu button:hover, .death-screen button:hover {
+    background-color: #21201c; /* Darker shade on hover */
+    transform: scale(1.05);
+  }
+
+  .menu button:active, .death-screen button:active {
+    transform: scale(0.95);
+  }
